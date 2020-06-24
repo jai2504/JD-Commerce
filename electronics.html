@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="student.css">
+<style>
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  height: 500;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+	</style>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    <style>
+.ab
+{
+background:#2F4F4F;
+animation:myanimation 10s infinite;
+}
+@keyframes myanimation {
+  0% {background-color:  #2F4F4F;}
+  25%{background-color:#4A777A;}
+  50%{background-color:#68838B;}
+  75%{background-color:#539DC2;}
+  100% {background-color: #2F4F4F;}
+}
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="ab">
+
+
+<div id="main">
+<div class="jai">
+  <div class="boss">
+      <img src="jai1.png">
+      </div>
+      <div class="ram">
+        <h1 class="glow">J.D. COMMERCE</h1>
+
+
+        </div>
+</div>
+
+<div class="bg-img">
+  <div class="bcontainer">
+    <table class="kk">
+      <tr>
+        <th>About</th>
+        <th>Filter</th>
+        <th>Sell</th>
+        <th>Pay</th>
+        <th>Offer Zones</th>
+        <th>Help</th>
+        <th>Social</th>
+        <th>Policy</th>
+        <th>Gift Cards</th>
+        <th class="pp"><input type="text" placeholder="Search...." style="height:40px;width:230px"></th>
+        </tr>
+      </table>
+  </div>
+</div>
+<div class="container">
+
+<!-- Full-width images with number text -->
+
+<div class="mySlides">
+  <div class="numbertext">1 / 6</div>
+    <img src="m1.jpg" height="500px" width="100%" >
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 6</div>
+    <img src="L1.jpg" height="500px" width="100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 6</div>
+    <img src="P1.jpg" height="500px" width="100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">4 / 6</div>
+    <img src="H1.jpg" height="500px" width="100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 6</div>
+    <img src="LC1.jpg"  height="500px" width="100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">6 / 6</div>
+    <img src="PP1.jpg"  height="500px" width="100%">
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!-- Image text -->
+<div class="caption-container">
+  <p id="caption"></p>
+</div>
+
+<div class="row1">
+
+  <div class="column1">
+    <img class="demo cursor" src="m1.jpg" style="width:100%;height:100%;
+    " onclick="currentSlide(1)" alt="The Woods">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="L1.jpg" style="width:100%;height:100%;" onclick="currentSlide(2)" alt="Cinque Terre">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="P1.jpg" style="width:100%;height:100%;" onclick="currentSlide(3)" alt="Mountains and fjords">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="H1.jpg" style="width:100%;height:100%;" onclick="currentSlide(4)" alt="Northern Lights">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="LC1.jpg" style="width:100%;height:100%;" onclick="currentSlide(5)" alt="Nature and sunrise">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="PP1.jpg" style="width:100%;height:100%;" onclick="currentSlide(6)" alt="Snowy Mountains">
+  </div>
+</div>
+
+</div>
+<hr><br><br>
+<h2 style="color:white">Mobiles</h2>
+<hr>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="mobile2.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Honor 9N (Blue, 4GB RAM, 64GB Storage)</h3>
+      <p>Rs.9999</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="mobile4.jpg" alt="Lights" height=200px style="width:100%">
+      <h3>Samsung Galaxy M30 (Gradation Blue, 4+64 GB)</h3>
+      <p>Rs.14999</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="mobile3.jpg" alt="Nature" height=200px style="width:100%">
+      <h3>Redmi Y3 (Prime Black, 4GB RAM, 64GB Storage)</h3>
+      <p>Rs.11999</p>
+    </div>
+  </div>
+  <div class="column" >
+    <a href="#"><div class="content">
+      <img src="mobile5.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Click ME for More Deals</h3><br><br>
+      
+    </div></a>
+  </div>
+</div><br>
+<h2 style="color:white">Laptops</h2><hr>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="lap2.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Dell Inspiron 5370 Intel Core i5 8th Gen 13.3-inch FHD Thin and Light Laptop (8GB/256GB SSD/Windows 10 Home/MS Office/Silver/1.50kg)</h3>
+      <p>Rs.62500</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="lap3.jpg" alt="Lights" height=200px style="width:100%">
+      <h3>HP 15 Intel Core i5 (8GB DDR4/1TB HDD/Win 10/MS Office/Integrated Graphics/2.04 kg), Full HD Laptop (15.6-inch, Sparkling Black) 15q-ds0029TU</h3>
+      <p>Rs.49950</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="lap4.jpg" alt="Nature" height=200px style="width:100%">
+      <h3>ASUS TUF FX570 Intel Core i5 8th Gen 15.6-inch FHD Gaming Laptop (8GB/1TB Hybrid HDD (FireCuda)/Windows 10/GTX 1050 4GB Graphics/Black/1.96 kg), FX570UD-E4168T</h3>
+      <p>Rs.52990</p>
+    </div>
+  </div>
+  <div class="column" >
+    <a href="#"><div class="content">
+      <img src="lap1.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Click ME for More Deals</h3><br><br>
+      
+    </div></a>
+  </div>
+</div>
+<br>
+<h2 style="color:white">TVs & LEDs</h2><hr>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="led1.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>VU 126 cm (50 inches) Pixelight 4K HDR Smart LED TV 50QDV (Black) (2019 Model)</h3>
+      <p>Rs.31990</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="led2.jpg" alt="Lights" height=200px style="width:100%">
+      <h3>Avera 101.6 cm (40 Inches) Full HD Smart LED TV 40SMTLE2 (Black) (2019 Model)</h3>
+      <p>Rs.18999</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="led3.jpg" alt="Nature" height=200px style="width:100%">
+      <h3>CloudWalker 109 cm (43 inches) 4K Ready Full HD Smart LED TV 43SFX2 (Black)</h3>
+      <p>Rs.22999</p>
+    </div>
+  </div>
+  <div class="column" >
+    <a href="#"><div class="content">
+      <img src="led4.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Click ME for More Deals</h3><br><br>
+      
+    </div></a>
+  </div>
+</div>
+<br>
+<h2 style="color:white">Accessories</h2><hr>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="ec4.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Strontium Nitro128Gb One OTG 3.1 150 MBPS (Grey)</h3>
+      <p>Rs.1799</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="ec2.jpg" alt="Lights" height=200px style="width:100%">
+      <h3>Intex IT-15SBT Bluetooth Speakers (Black)</h3>
+      <p>Rs.1980</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="ec3.jpg" alt="Nature" height=200px style="width:100%">
+      <h3>Sennheiser HD 4.50 SE BT NC Bluetooth Wireless Noise Cancellation Headphone</h3>
+      <p>Rs.7490</p>
+    </div>
+  </div>
+  <div class="column" >
+    <a href="#"><div class="content">
+      <img src="ec1.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Click ME for More Deals</h3><br><br>
+      
+    </div></a>
+  </div>
+</div>
+  </body>
+</html>

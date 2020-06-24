@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="student.css">
+<style>
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  height: 500;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+	</style>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    <style>
+.ab
+{
+background:#2F4F4F;
+animation:myanimation 10s infinite;
+}
+@keyframes myanimation {
+  0% {background-color:  #2F4F4F;}
+  25%{background-color:#4A777A;}
+  50%{background-color:#68838B;}
+  75%{background-color:#539DC2;}
+  100% {background-color: #2F4F4F;}
+}
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="ab">
+
+
+<div id="main">
+<div class="jai">
+  <div class="boss">
+      <img src="jai1.png" height="100%" width="80%">
+      </div>
+      <div class="ram">
+        <h1 class="glow">J.D. COMMERCE</h1>
+
+
+        </div>
+</div>
+
+<div class="bg-img">
+  <div class="container">
+    <table class="kk">
+      <tr>
+        <th>About</th>
+        <th>Filter</th>
+        <th>Sell</th>
+        <th>Pay</th>
+        <th>Offer Zones</th>
+        <th>Help</th>
+        <th>Social</th>
+        <th>Policy</th>
+        <th>Gift Cards</th>
+        <th class="pp"><input type="text" placeholder="Search...." style="height:40px;width:230px"></th>
+        </tr>
+      </table>
+  </div>
+</div>
+<div class="container">
+
+<!-- Full-width images with number text -->
+
+<div class="mySlides">
+  <div class="numbertext">1 / 6</div>
+    <img src="kids5.jpg" height="500px" width="100%" >
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 6</div>
+    <img src="kids2.jpg" height="500px" width="100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 6</div>
+    <img src="kids3.jpg" height="500px" width="100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">4 / 6</div>
+    <img src="kids.png" height="500px" width="100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 6</div>
+    <img src="kids1.jpg"  height="500px" width="100%">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">6 / 6</div>
+    <img src="kids4.jfif"  height="500px" width="100%">
+</div>
+
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!-- Image text -->
+<div class="caption-container">
+  <p id="caption"></p>
+</div>
+
+<div class="row1">
+
+  <div class="column1">
+    <img class="demo cursor" src="kids5.jpg" style="width:100%;height:100%;
+    " onclick="currentSlide(1)" alt="The Woods">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="kids2.jpg" style="width:50%;height:50%;" onclick="currentSlide(2)" alt="Cinque Terre">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="kids3.jpg" style="width:100%;height:100%;" onclick="currentSlide(3)" alt="Mountains and fjords">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="kids.png" style="width:100%;height:100%;" onclick="currentSlide(4)" alt="Northern Lights">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="kids1.jpg" style="width:100%;height:100%;" onclick="currentSlide(5)" alt="Nature and sunrise">
+  </div>
+  <div class="column1">
+    <img class="demo cursor" src="kids4.jfif" style="width:100%;height:100%;" onclick="currentSlide(6)" alt="Snowy Mountains">
+  </div>
+</div>
+
+</div>
+<hr><br><br>
+<h2 style="color:white">Kid's Clothing</h2>
+<hr>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="kidss1.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Si Noir Boy's Cotton Blazer Navy Shirt and Pant Suit Set in Gray</h3>
+      <p>Rs.1049</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="kidss2.jpg" alt="Lights" height=200px style="width:100%">
+      <h3>Indian Evergreen Girl's Jeans Denim Dungaree Dress</h3>
+      <p>Rs.819</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="kidss3.jpg" alt="Nature" height=200px style="width:100%">
+      <h3>GiftsCafe Kids Casual Tshirts Rakshabandhan Special </h3>
+      <p>Rs.1199</p>
+    </div>
+  </div>
+  <div class="column" >
+    <a href="#"><div class="content">
+      <img src="kidss15.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Click ME for More Deals</h3><br><br>
+      
+    </div></a>
+  </div>
+</div><br>
+<h2 style="color:white">Kid's Footwear</h2><hr>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="kidss4.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Barbie Girl's Walking Shoes</h3>
+      <p>Rs.450</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="kidss5.jpg" alt="Lights" height=200px style="width:100%">
+      <h3>SKYMATE Red Lite Weight Sport Shoes for Boys</h3>
+      <p>Rs.650</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="kidds6.jpg" alt="Nature" height=200px style="width:100%">
+      <h3>Fashion shoes Baby Girl White Long Shoes</h3>
+      <p>Rs.889</p>
+    </div>
+  </div>
+  <div class="column" >
+    <a href="#"><div class="content">
+      <img src="kidss14.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Click ME for More Deals</h3><br><br>
+      
+    </div></a>
+  </div>
+</div>
+<br>
+<h2 style="color:white">Kid's Watches</h2><hr>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="kidss6.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Swadesi Stuff Analogue Multicolor Dial 11 Belt Watches for Girls</h3>
+      <p>Rs.299</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="kidss7.jpg" alt="Lights" height=200px style="width:100%">
+      <h3>Skmei Analog-Digital Black Dial Men's Watch - 1155-Red</h3>
+      <p>Rs.474</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="kidss8.jpg" alt="Nature" height=200px style="width:100%">
+      <h3>Zoop Analog Multi-Color Dial Children's Watch -NDC3025PP16C</h3>
+      <p>Rs.795</p>
+    </div>
+  </div>
+  <div class="column" >
+    <a href="#"><div class="content">
+      <img src="kidss13.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Click ME for More Deals</h3><br><br>
+      
+    </div></a>
+  </div>
+</div>
+<br>
+<h2 style="color:white">School Bags</h2><hr>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="kidss9.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Happile Fabric School Bag, Lunch Box and Water Bottle Cover Combo Set</h3>
+      <p>Rs.809</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="kidss10.jpg" alt="Lights" height=200px style="width:100%">
+      <h3>DUSSLE DORF Kid's Polyester 15L Backpack </h3>
+      <p>Rs.599</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="kidss11.jpg" alt="Nature" height=200px style="width:100%">
+      <h3>Gracetop Women's Backpack Handbag</h3>
+      <p>Rs.399</p>
+    </div>
+  </div>
+  <div class="column" >
+    <a href="#"><div class="content">
+      <img src="kidss12.jpg" alt="Mountains" height=200px style="width:100%">
+      <h3>Click ME for More Deals</h3><br><br>
+      
+    </div></a>
+  </div>
+</div>
+  </body>
+</html>
